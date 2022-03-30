@@ -3,5 +3,15 @@
     "description": "A simple application to use to get up and running with api.tink.com",
     "repository": "https://github.com/tink-ab/tink-link-web-payment-example",
     "logo": "https://cdn.openbankingexpo.com/wp-content/uploads/2019/09/Tink-Logo.png",
-    "keywords": ["node", "express", "static"]
+    "keywords": ["node", "express", "static"],
+    "env": {
+        "REACT_APP_CLIENT_ID": {
+          "description": "Client Id.",
+          "default": true
+        },
+        "TINK_CLIENT_SECRET": {
+          "description": "Client Secret.",
+          "default": true
+        }
+      }
   }
