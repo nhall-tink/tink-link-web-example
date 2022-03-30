@@ -156,6 +156,6 @@ if (!CLIENT_SECRET) {
 
 // Start the server.
 const port = 8080;
-app.listen(port, function() {
+app.listen(process.env.PORT || port, function() {
   console.log("Tink example app listening on port " + port);
 });
