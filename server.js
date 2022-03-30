@@ -11,7 +11,7 @@ app.use(express.static(path.join(__dirname, "client/build")));
 app.use(bodyParser.json());
 
 // Needed to make client-side routing work in production.
-app.get("/*", function(req, res) {
+app.get("*", function(req, res) {
   res.sendFile(path.join(__dirname, "client/build", "index.html"));
 });
 
