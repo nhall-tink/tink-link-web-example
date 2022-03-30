@@ -5,6 +5,7 @@
   "repository": "github:tink-ab/tink-connect-example",
   "main": "server.js",
   "scripts": {
+    "start": "\"npm server.js\" \"npm run client\"",
     "client": "cd client && npm start",
     "server": "node server.js",
     "dev": "concurrently --kill-others-on-fail \"nodemon server.js\" \"npm run client\"",
