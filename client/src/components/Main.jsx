@@ -9,7 +9,8 @@ export const Main = () => {
   return (
     <div>
       <Header text="Hello!" emoji="money" />
-
+      <p>{process.env.REACT_APP_BRAND_NAME}</p>
+      <p>%process.env.REACT_APP_BRAND_NAME%</p>
       <p>We can help you analyze your financial status.</p>
       <p>
         Or actually we can’t. We’re just a simple example app. But you can
@@ -61,7 +62,7 @@ export const Main = () => {
       </div>
 
       <AuthorizationLink
-        scope="accounts:read,transactions:read,user:read"
+        scope="accounts:read,investments:read,transactions:read,user:read"
         market={market}
         locale={locale}
       />
