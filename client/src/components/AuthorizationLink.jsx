@@ -8,7 +8,7 @@ export const AuthorizationLink = ({ locale, market, scope, ssn }) => {
     "https://link.tink.com/1.0/authorize/?" +
     "client_id=" +
     process.env.REACT_APP_CLIENT_ID +
-    "&redirect_uri=https://console.tink.com/callback" +
+    "&redirect_uri=" + window.location.href + "/callback" +
     "&scope=" +
     scope +
     ssnData +
