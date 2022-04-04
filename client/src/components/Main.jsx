@@ -9,14 +9,15 @@ export const Main = () => {
   return (
     <div>
       <Header text="Hello!" emoji="money" />
-      <p>{process.env.REACT_APP_BRAND_NAME}</p>
-      <p>%process.env.REACT_APP_BRAND_NAME%</p>
+      <p>Welcome, {process.env.REACT_APP_BRAND_NAME}!</p>
       <p>We can help you analyze your financial status.</p>
       <p>
         Or actually we can’t. We’re just a simple example app. But you can
         connect your bank to see your account data, transactions and
         investments!
       </p>
+
+      <p>You can share the App with anyone you choose to in your company, to allow them to see the potential power of our companies partnership!</p>
 
       <div style={{ padding: "50px 0 10px 0" }}>
         <BasicDropdown

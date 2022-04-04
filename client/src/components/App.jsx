@@ -19,7 +19,7 @@ export const App = () => (
           }}
         >
           <span className="circle" />
-          <h2 style={{ margin: 0 }}>Example</h2>
+          <h2 style={{ margin: 0 }}>{process.env.REACT_APP_BRAND_NAME} / Tink Demo Site</h2>
         </a>
       </Col>
     </Row>
