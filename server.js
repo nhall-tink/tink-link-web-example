@@ -3,6 +3,7 @@ const app = express();
 const bodyParser = require("body-parser");
 const path = require("path");
 const fetch = require("node-fetch");
+const res = require("express/lib/response");
 require('dotenv').config()
 console.log(process.env) 
 
@@ -37,7 +38,7 @@ app.post("/callback", function(req, res) {
 async function handleResponse(response) {
   const json = await response.json();
   if (response.status !== 200) {
-    throw new Error(json.errorMessage + response.json);
+    throw new Error(json.errorMessage + response.body + response.status);
   }
   return json;
 }
