@@ -37,7 +37,7 @@ app.post("/callback", function(req, res) {
 async function handleResponse(response) {
   const json = await response.json();
   if (response.status !== 200) {
-    throw new Error(json.errorMessage);
+    throw new Error(json.errorMessage + response.json);
   }
   return json;
 }
